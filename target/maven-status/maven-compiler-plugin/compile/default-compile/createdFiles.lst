@@ -1,0 +1,4 @@
+varusmiesweb\Application.class
+varusmiesweb\controller\PalveluspaikatController.class
+varusmiesweb\papu\RekisteriPapu.class
+varusmiesweb\controller\VarusmiehetController.class
