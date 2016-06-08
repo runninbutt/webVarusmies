@@ -8,12 +8,15 @@ package varusmiesweb.controller;
 import VarusmiesDomain.Palveluspaikka;
 import VarusmiesDomain.Varusmiesrekisteri;
 import java.util.List;
+import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.ResponseStatus;
 import varusmiesweb.papu.RekisteriPapu;
 
 /**
@@ -29,6 +32,12 @@ public class PalveluspaikatController {
     @RequestMapping(method = RequestMethod.GET)
     public String defaultGet() {
         return "redirect:/palveluspaikat";
+    }
+    
+    @ResponseStatus(HttpStatus.ACCEPTED) // jotta erottuu HTTP 200 - OK
+    @RequestMapping(value="/tallenna",method = RequestMethod.GET)
+    public void tallenna() {
+        rekisteri.tallenna();
     }
     
     @RequestMapping(value="/palveluspaikat",method=RequestMethod.GET)
