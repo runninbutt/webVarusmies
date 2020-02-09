@@ -42,7 +42,7 @@
 
             <ul>
                 <c:forEach var="palvpaik" items="${palveluspaikat}">
-                    <li><a href="/palveluspaikka/${palvpaik.palvpaikID}">${palvpaik.palvnimi} (${palvpaik.paikkakunta}) </a><form action="/palveluspaikat/${palvpaik.palvpaikID}/delete" method="POST"><input type="submit" value="poista"/></form></li>
+                    <li><a href="/palveluspaikka/${palvpaik.palvpaikID}">${palvpaik.palvnimi} (${palvpaik.paikkakunta}) </a><form action="/palveluspaikat/${palvpaik.palvpaikID}/delete" method="POST" onsubmit="return confirm('Oletko varma että haluat poistaa palveluspaikan ${palvpaik.palvnimi}?');"><input type="submit" value="poista"/></form></li>
                 </c:forEach>
             </ul>
 
