@@ -1,0 +1,9 @@
+.formi {
+    width: 200px;
+    clear: both;
+  }
+  
+.formi input {
+    width: 100%;
+    clear: both;
+}

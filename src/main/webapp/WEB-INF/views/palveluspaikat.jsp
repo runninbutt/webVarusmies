@@ -14,6 +14,7 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.3/jquery.min.js"></script>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet"/>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="tyyli.css"/>
     </head>
     <body>
         <nav class="navbar navbar-inverse">
@@ -47,7 +48,7 @@
             </ul>
 
             <h2>Lisää uusi palveluspaikka</h2>
-            <form action="/palveluspaikat" method="POST">
+            <form class="formi" action="/palveluspaikat" method="POST">
                 <p><label>Nimi: <input type="text" name="nimi"/></label></p>
                 <p><label>Osoite: <input type="text" name="osoite"/></label></p>
                 <p><label>Postinumero: <input type="text" name="postinro"/></label></p>

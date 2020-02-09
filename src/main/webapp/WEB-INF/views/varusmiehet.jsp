@@ -11,6 +11,7 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Palveluspaikassa ${palveluspaikka.palvnimi} olevat varusmiehet</title>
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
+        <link rel="stylesheet" type="text/css" href="tyyli.css"/>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </head>
     <body>
@@ -41,7 +42,7 @@
             </ul>
 
             <h2>Lisää uusi varusmies</h2>
-            <form action="/palveluspaikka/${palveluspaikka.palvpaikID}" method="POST">
+            <form class="formi" action="/palveluspaikka/${palveluspaikka.palvpaikID}" method="POST">
                 <p>Sukunimi: <input type="text" name="sukunimi"/></p>
                 <p>Etunimet: <input type="text" name="etunimet"/></p>
                 <p>Henkilötunnus: <input type="text" name="hetu"/></p>
