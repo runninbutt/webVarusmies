@@ -11,7 +11,7 @@
 
         <p><strong>Lisää uusi palveluspaikka</strong></p>
         
-        <form action="/guests" method="POST">
+        <form action="/palveluspaikat" method="POST">
             <p>Nimi:</p>
             <input type="text" name="name"/>
             <p>Ruokavalio:</p>

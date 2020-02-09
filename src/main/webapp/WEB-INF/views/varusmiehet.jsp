@@ -49,7 +49,7 @@
                 <p>Paikkakunta: <input type="text" name="paikkakunta"/></p>
                 <p>Postinumero: <input type="text" name="postinro"/></p>
                 <p>Cooper: <input type="text" name="cooper"/></p>
-                <p>Palveluspaikka ID: <input type="text" name="palvpaikid"/></p>
+                <input type="hidden" name="palvpaikid" value="${palveluspaikka.palvpaikID}"/>
                 <input type="submit" value="Lisää"/>
             </form>
         </div>
